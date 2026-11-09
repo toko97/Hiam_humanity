@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>המילים שלי – סטודיו כרטיסים</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Assistant:wght@400;700&family=David+Libre:wght@500&family=Frank+Ruhl+Libre:wght@500&family=Heebo:wght@400;600;800&family=Karantina:wght@700&family=Rubik:wght@400;600&family=Secular+One&family=Suez+One&family=Varela+Round&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar no-print">
+    <h1>המילים שלי</h1>
+    <nav>
+      <button data-view="new" class="tab">כרטיס חדש</button>
+      <button data-view="cards" class="tab">הכרטיסים</button>
+      <button data-view="booklet" class="tab">החוברת</button>
+    </nav>
+  </header>
+  <div id="banner" class="banner no-print" hidden></div>
+  <main id="app" class="no-print"></main>
+  <div id="print-area"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

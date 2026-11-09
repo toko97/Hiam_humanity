@@ -1,0 +1,21 @@
+{
+  "name": "hiam-humanity",
+  "version": "0.1.0",
+  "private": true,
+  "description": "סטודיו כרטיסים – כתיבת השקפת עולם ויצירת כרטיסים מעוצבים עם תמונה לכל קטע",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --watch --env-file-if-exists=.env server/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "@google/genai": "^1.52.0",
+    "express": "^5.3.0",
+    "openai": "^6.49.0",
+    "zod": "^4.6.7"
+  }
+}
